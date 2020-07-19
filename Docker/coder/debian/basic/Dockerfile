@@ -10,6 +10,7 @@ RUN apt-get update && apt-get upgrade -y
 
 # Apt installations
 RUN apt-get install -y \
+  bash-completion \
   binutils \
   bison \
   build-essential \
@@ -21,6 +22,7 @@ RUN apt-get install -y \
   make \
   mercurial \
   npm \
+  rsync \
   tig \
   tree \
   vim \
