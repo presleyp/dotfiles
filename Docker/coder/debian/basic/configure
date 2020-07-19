@@ -10,3 +10,6 @@ fi
 
 # moq
 go get github.com/matryer/moq
+
+# yarn
+npm install -g yarn
