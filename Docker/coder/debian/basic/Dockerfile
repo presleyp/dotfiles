@@ -19,6 +19,7 @@ RUN apt-get install -y \
   golang-go \
   git \
   jq \
+  locales \
   make \
   mercurial \
   npm \
