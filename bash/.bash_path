@@ -1,4 +1,4 @@
-# Adds ~/bini
+# Adds ~/bin
 if [ -d '$HOME/bin' ]; then
   PATH="$HOME/bin:$PATH"
 fi
