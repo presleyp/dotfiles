@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
-echo "Hello install.sh"
+echo "Hello from vapurrmaid/dotfiles install.sh"
 
-# echo "Clonling home dotfiles..."
-# DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo "Cloning home dotfiles..."
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Install HOME-based bash files
-# ln -s $DIR/bash/.bash_aliases $HOME
-# ln -s $DIR/bash/.bash_path $HOME
-# ln -s $DIR/bash/.bashrc $HOME
-# ln -s $DIR/bash/.profile $HOME
+ln -sf $DIR/bash/.bash_aliases $HOME
+ln -sf $DIR/bash/.bash_path $HOME
+ln -sf $DIR/bash/.bashrc $HOME
+ln -sf $DIR/bash/.profile $HOME
 
 # Install git files
-# ln -s $DIR/git/.gitconfig $HOME
+ln -sf $DIR/git/.gitconfig $HOME
 
 # Install VS Code files
-# mkdir -p $HOME/.config/Code/User
-# ln -s $DIR/Code/User/keybindings.json $HOME/.config/Code/User
-# ln -s $DIR/Code/User/settings.json $HOME/.config/Code/User
+mkdir -p $HOME/.config/Code/User
+ln -sf $DIR/Code/User/keybindings.json $HOME/.config/Code/User
+ln -sf $DIR/Code/User/settings.json $HOME/.config/Code/User
