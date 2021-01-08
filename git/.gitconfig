@@ -1,21 +1,25 @@
+[alias]
+	clbranches = "! git branch -d $(git branch --merged=master | grep -v master)"
+	f = "! git commit --fixup $(git log --pretty='%H' -1 --invert-grep --grep 'fixup! ')"
+	fs = "!f() { git commit --fixup :/$1 ; }; f"
+	root = rev-parse --show-toplevel
+[core]
+	editor = vim
+	fileMode = true
+[fetch]
+	prune = true
+	pruneTags = true
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+	prompt = false
+[pull]
+	rebase = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [user]
 	email = grey@coder.com
 	name = G r e y
 	signingkey = 1B933BA64CF808BD
-[core]
-	editor = vim
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-[mergetool]
-	prompt = false
-	keepBackup = false
-[merge]
-	tool = vimdiff
-	conflictstyle = diff3
-[commit]
-	gpgsign = true
-[alias]
-	clbranches = "! git branch -d $(git branch --merged=master | grep -v master)"
-	root = rev-parse --show-toplevel
-[pull]
-	rebase = false
