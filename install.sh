@@ -25,5 +25,5 @@ func causeError() {
 }
 
 echo "This is a temporary bug introduced for testing something"
-echo "(yes I know, this is a lazy way of testing, but meh)"
+echo '(yes I know, this is a lazy way of testing, but meh)'
 causeError
