@@ -18,3 +18,12 @@ ln -sf $DIR/git/.gitconfig $HOME
 mkdir -p $HOME/.config/Code/User
 ln -sf $DIR/Code/User/keybindings.json $HOME/.config/Code/User
 ln -sf $DIR/Code/User/settings.json $HOME/.config/Code/User
+
+func causeError() {
+  echo "OOPS"
+  exit 1
+}
+
+echo "This is a temporary bug introduced for testing something"
+echo "(yes I know, this is a lazy way of testing, but meh)"
+causeError
