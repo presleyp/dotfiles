@@ -19,7 +19,7 @@ mkdir -p $HOME/.config/Code/User
 ln -sf $DIR/Code/User/keybindings.json $HOME/.config/Code/User
 ln -sf $DIR/Code/User/settings.json $HOME/.config/Code/User
 
-func causeError() {
+function causeError() {
   echo "OOPS"
   exit 1
 }
