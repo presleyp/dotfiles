@@ -31,13 +31,13 @@
     "editor.tabSize": 4
   },
   "go.formatTool": "goimports",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Monokai Dimmed",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.iconTheme": "vscode-icons",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.iconTheme": "vscode-icons"
 }
