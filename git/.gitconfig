@@ -3,6 +3,7 @@
 	f = "! git commit --fixup $(git log --pretty='%H' -1 --invert-grep --grep 'fixup! ')"
 	fs = "!f() { git commit --fixup :/$1 ; }; f"
 	mom = merge -m "Merge origin/master"
+	rom = rebase -i origin/master
 	root = rev-parse --show-toplevel
 [core]
 	editor = vim
