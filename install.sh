@@ -16,5 +16,5 @@ ln -sf $DIR/git/.gitconfig $HOME
 
 # Install VS Code files
 mkdir -p $HOME/.config/Code/User
-ln -sf $DIR/Code/User/keybindings.json $HOME/.config/Code/User
-ln -sf $DIR/Code/User/settings.json $HOME/.config/Code/User
+ln -sf $DIR/Code/User/keybindings.json $HOME/.local/share/code-server/User/
+ln -sf $DIR/Code/User/settings.json $HOME/.local/share/code-server/User/
