@@ -16,5 +16,15 @@ ln -sf $DIR/git/.gitconfig $HOME
 
 # Install VS Code files
 mkdir -p $HOME/.config/Code/User
-ln -sf $DIR/Code/User/keybindings.json $HOME/.local/share/code-server/User/
-ln -sf $DIR/Code/User/settings.json $HOME/.local/share/code-server/User/
+ln -sf $DIR/Code/User/keybindings.json $HOME/.config/Code/User
+ln -sf $DIR/Code/User/settings.json $HOME/.config/Code/User
+
+# Install code-server files
+if [ -d "$HOME/.local/share/code-server" ]; then
+	echo "Installing code-server settings"
+	mkdir -p "$HOME/.local/share/code-server/User"
+        ln -sf $DIR/Code/User/keybindings.json $HOME/.local/share/code-server/User
+        ln -sf $DIR/Code/User/settings.json $HOME/.local/share/code-server/User
+else
+	echo ".local/share not found, skipping code-server"
+fi
