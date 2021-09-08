@@ -120,7 +120,7 @@ export PS1="\u \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Coder Environment Variables
 export GOOGLE_PROJECT_ID="coder-dev-1"
-export NAMESPACE="coder-greyb-namespace"
+export NAMESPACE="coder-presley-namespace"
 
 
 if [ -f "$HOME/.bash_path" ]; then

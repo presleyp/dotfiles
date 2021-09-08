@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Hello from vapurrmaid/dotfiles install.sh"
+echo "Hello from presleyp/dotfiles install.sh"
 
 echo "Cloning home dotfiles..."
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"

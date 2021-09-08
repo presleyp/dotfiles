@@ -23,8 +23,8 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [user]
-	email = grey@coder.com
-	name = G r e y
-	signingkey = 1B933BA64CF808BD
+	email = presley@coder.com
+	name = Presley
+	signingkey = FB2B134CD9A91920
 [rerere]
 	enabled = true
