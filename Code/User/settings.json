@@ -17,7 +17,7 @@
   },
   "editor.detectIndentation": true,
   "editor.dragAndDrop": false,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
@@ -57,5 +57,18 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.userWords": [
+    "browserslist",
+    "codercom",
+    "compat",
+    "fira",
+    "fontsource",
+    "goimports",
+    "merriweather",
+    "preinstall"
+  ],
 }
